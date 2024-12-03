@@ -5,11 +5,11 @@ import { Footer } from "../../sections"
 const Layout = () => {
   return (
     // Layout
-    <div>
+    <>
         <NavBar />
         <Outlet />
         <Footer />
-    </div>
+    </>
   )
 }
 export default Layout

@@ -7,13 +7,13 @@ export default {
         positivusGreen: "#B9FF66",
         positivusGrey: "#F3F3F3",
         positivusDark: "#191A23"
+      },
+      screens: {
+        sm: "576px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px"
       }
-    },
-    screens: {
-      sm: "576px",
-      md: "768px",
-      lg: "992px",
-      xl: "1200px"
     },
     container: {
       center: true
