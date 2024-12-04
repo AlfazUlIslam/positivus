@@ -1,8 +1,0 @@
-export { default as Home } from "./Home/Home"
-export { default as AboutUs } from "./AboutUs/AboutUs"
-export { default as Services } from "./Services/Services"
-export { default as UseCases } from "./UseCases/UseCases"
-export { default as Pricing } from "./Pricing/Pricing"
-export { default as Blog } from "./Blog/Blog"
-export { default as ErrorPage } from "./ErrorPage/ErrorPage"
-export { default as Layout } from "./Layout/Layout"

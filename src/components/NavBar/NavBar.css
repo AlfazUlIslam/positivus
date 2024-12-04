@@ -1,0 +1,64 @@
+@keyframes slide-up-animation {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes slide-up-animation {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+.slide_up {
+    animation: slide-up-animation 0.8s;
+}
+
+:root {
+    --my-dim: 2px
+}
+
+.mob_menu_btn {
+    width: calc(var(--my-dim) * 12);
+    height: calc(var(--my-dim) * 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(var(--my-dim) * 3);
+    cursor: pointer;
+}
+
+.mob_menu_btn div {
+    width: 100%;
+    height: var(--my-dim);
+    background: #000;
+    transition: linear 0.4s;
+}
+
+.btn_toggled .line-one {
+    transform: translateY(calc(var(--my-dim) * 3)) rotate(45deg);
+}
+
+.btn_toggled .line-two {
+    display: none;
+}
+
+.btn_toggled .line-three {
+    transform: translateY(calc(var(--my-dim) * -1)) rotate(-45deg);
+}
+
+@media (min-width: 576px) {
+    :root {
+        --my-dim: 3px;
+    }
+}

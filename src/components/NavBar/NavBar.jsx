@@ -1,53 +1,66 @@
+import { useState } from "react"
 import { Container } from "../../containers"
-import NavLink from "../NavLink/NavLink"
+import { NavLink, ReqQuoteBtn } from ".."
 import { logo } from "../../assets"
+import "./NavBar.css"
 
 const NavBar = () => {
-  return (
-    // Nav bar
-    <nav>
-        <Container styles={`px-6 py-12 flex justify-between 
-        items-center xl:w-[1400px]`}>
-            {/* Brand logo */}
-            <div>
-                <img
-                    src={logo}
-                    alt="Positivus Logo"
-                />
-            </div>
-            {/* Nav links */}
-            <ul className="flex justify-center items-center 
-            gap-[40px]">
-                <NavLink linkRef={"/"}>
-                    Home
-                </NavLink>
-                <NavLink linkRef={"/about-us"}>
-                    About Us
-                </NavLink>
-                <NavLink linkRef={"/services"}>
-                    Services
-                </NavLink>
-                <NavLink linkRef={"/use-cases"}>
-                    Use Cases
-                </NavLink>
-                <NavLink linkRef={"/pricing"}>
-                    Pricing
-                </NavLink>
-                <NavLink linkRef={"/blog"}>
-                    Blog
-                </NavLink>
-                {/* Nav button */}
-                <button className="w-[230px] h-[70px] 
-                rounded-[14px] border border-positivusDark 
-                font-spaceGrotesk font-normal text-[20px] 
-                text-black cursor-pointer transition-all 
-                duration-1000 hover:bg-positivusDark 
-                hover:text-white active:scale-90">
-                    Request a quote
-                </button>
-            </ul>
-        </Container>
-    </nav>
-  )
+    const [toggle, setToggle] = useState(false)
+
+    const handleToggle = () => {
+        setToggle(prev => !prev)
+    }
+
+    return (
+        // Nav bar
+        <nav>
+            {/* py-12 */}
+            <Container styles={`p-6 flex justify-between 
+            items-center xl:w-[1400px]`}>
+                {/* Brand logo */}
+                <div>
+                    {/* w-auto */}
+                    <img
+                        className="w-[120px]"
+                        src={logo}
+                        alt="Positivus Logo"
+                    />
+                </div>
+                {/* Nav links */}
+                <ul className="hidden md:flex md:justify-center 
+                md:items-center md:gap-[40px]">
+                    <NavLink linkRef={"#home"} content={"Home"} />
+                    <NavLink linkRef={"#services"} content={"Services"} />
+                    <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
+                    <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
+                    <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
+                    <ReqQuoteBtn />
+                </ul>
+                {/* Mobile menu container */}
+                <div className="relative md:hidden">
+                    {/* Mobile menu button */}
+                    <button 
+                        className={`mob_menu_btn ${toggle ? "btn_toggled" : ""}`}
+                        onClick={handleToggle}    
+                    >
+                        <div className="line-one"></div>
+                        <div className="line-two"></div>
+                        <div className="line-three"></div>
+                    </button>
+                    {/* Mobile menu */}
+                    <ul className={`${toggle ? "flex" : "hidden"} rounded-md 
+                    flex-col items-center gap-2 absolute top-14 right-[0.2rem] 
+                    p-4 bg-white border border-slate-100 shadow-xl slide_up`}> 
+                        <NavLink linkRef={"#home"} content={"Home"} />
+                        <NavLink linkRef={"#services"} content={"Services"} />
+                        <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
+                        <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
+                        <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
+                        <ReqQuoteBtn />
+                    </ul>
+                </div>
+            </Container>
+        </nav>
+    )
 }
 export default NavBar
