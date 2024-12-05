@@ -19,9 +19,9 @@ const Hero = () => {
                     Navigating the digital landscape for success
                 </h1>
                 <p className="w-[300px] font-spaceGrotesk 
-                font-normal text-[12px] leading-[18px] text-black 
+                font-normal text-[14px] leading-[22px] text-black 
                 sm:w-[500px] sm:text-[20px] sm:leading-[28px] 
-                md:w-[300px] md:text-[12px] md:leading-[18px] 
+                md:w-[300px] md:text-[14px] md:leading-[22px] 
                 lg:w-[430px] lg:text-[18px] lg:leading-[28px] 
                 xl:w-[500px] xl:text-[20px]">
                     Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
