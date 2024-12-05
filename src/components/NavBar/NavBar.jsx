@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Container } from "../../containers"
-import { NavLink, SectionBtn } from ".."
+import { NavLink, NavBtn } from ".."
 import { logo } from "../../assets"
 import "./NavBar.css"
 
@@ -33,12 +33,7 @@ const NavBar = () => {
                     <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
                     <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
                     <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
-                    <SectionBtn 
-                        styles={`w-[150px] bg-transparent 
-                        hover:bg-positivusDark sm:w-[180px] 
-                        lg:w-[150px] xl:w-[230px]`}
-                        content={"Request a quote"}
-                    />
+                    <NavBtn />
                 </ul>
                 {/* Mobile menu container */}
                 <div className="relative lg:hidden">
@@ -61,11 +56,7 @@ const NavBar = () => {
                         <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
                         <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
                         <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
-                        <SectionBtn 
-                            styles={`w-[150px] bg-transparent 
-                            hover:bg-positivusDark sm:w-[180px]`}
-                            content={"Request a quote"}
-                        />
+                        <NavBtn />
                     </ul>
                 </div>
             </Container>
