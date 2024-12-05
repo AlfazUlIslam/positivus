@@ -5,36 +5,40 @@ import { heroImg } from "../../assets"
 const Hero = () => {
   return (
     <section id="home">
-        {/* py-[70px] flex-row justify-between gap-0 */}
         <Container styles={`px-6 py-[40px] flex 
-        flex-col-reverse items-center gap-10`}>
+        flex-col-reverse items-center gap-10 
+        sm:py-[70px] md:py-[40px] md:flex-row 
+        md:justify-between md:gap-0 lg:py-[70px]`}>
             {/* Hero content */}
-            {/* gap-[35px] */}
             <div className="flex flex-col 
-            items-start gap-[25px]">
-                {/* w-[530px] text-[60px] */}
+            items-start gap-[25px] xl:gap-[35px]">
                 <h1 className="w-[300px] font-spaceGrotesk 
-                font-normal text-[30px] text-black">
+                font-normal text-[30px] text-black sm:w-[530px] 
+                sm:text-[60px] md:w-[300px] md:text-[30px] lg:w-[430px] 
+                lg:text-[50px] xl:w-[530px] xl:text-[60px]">
                     Navigating the digital landscape for success
                 </h1>
-                {/* w-[500px] text-[20px] leading-[28px] */}
                 <p className="w-[300px] font-spaceGrotesk 
-                font-normal text-[12px] leading-[18px] text-black">
+                font-normal text-[12px] leading-[18px] text-black 
+                sm:w-[500px] sm:text-[20px] sm:leading-[28px] 
+                md:w-[300px] md:text-[12px] md:leading-[18px] 
+                lg:w-[430px] lg:text-[18px] lg:leading-[28px] 
+                xl:w-[500px] xl:text-[20px]">
                     Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
                 </p>
-                {/* w-[270px] */}
                 <SectionBtn 
                     styles={`w-[180px] bg-positivusDark text-white 
                     hover:border-positivusGreen hover:bg-positivusGreen 
-                    hover:text-black`}
+                    hover:text-black sm:w-[270px] md:w-[180px] lg:w-[230px] 
+                    xl:w-[270px]`}
                     content={"Book a consultation"}
                 />
             </div>
             {/* Hero image */}
             <div>
-                {/* w-auto */}
                 <img 
-                    className="w-[300px]"
+                    className="w-[300px] sm:w-[500px] 
+                    md:w-[300px] lg:w-[450px] xl:w-auto"
                     src={heroImg} 
                     alt="Hero Image" 
                 />
