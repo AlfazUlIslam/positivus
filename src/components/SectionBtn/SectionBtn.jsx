@@ -2,8 +2,7 @@ const SectionBtn = (props) => {
     const { styles, content } = props
         
     return (
-        // Request quote button
-        // bg-transparent hover:bg-positivusDark
+        // Section button
         <button className={`${styles} h-[50px] 
         rounded-[14px] border 
         border-positivusDark font-spaceGrotesk 
