@@ -3,7 +3,6 @@ const NavLink = (props) => {
         
     return (
         // Nav link
-        // text-[20px]
         <li className="relative font-spaceGrotesk 
         font-normal text-[14px] leading-[28px] text-black 
         after:content-[''] after:w-[0%] after:h-[1px] 
