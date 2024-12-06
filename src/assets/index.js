@@ -1,2 +1,8 @@
 export { default as logo } from "./logo.png"
 export { default as heroImg } from "./hero-img.png"
+export { default as amazonLogo } from "./amazon-logo.png"
+export { default as dribbleLogo } from "./dribble-logo.png"
+export { default as hubspotLogo } from "./hubspot-logo.png"
+export { default as notionLogo } from "./notion-logo.png"
+export { default as netflixLogo } from "./netflix-logo.png"
+export { default as zoomLogo } from "./zoom-logo.png"
