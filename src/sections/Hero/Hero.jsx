@@ -27,10 +27,8 @@ const Hero = () => {
                     Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
                 </p>
                 <SectionBtn 
-                    styles={`w-[180px] bg-positivusDark text-white 
-                    hover:border-positivusGreen hover:bg-positivusGreen 
-                    hover:text-black sm:w-[270px] md:w-[180px] lg:w-[230px] 
-                    xl:w-[270px]`}
+                    styles={`w-[180px] sm:w-[270px] md:w-[180px] 
+                    lg:w-[230px] xl:w-[270px]`}
                     content={"Book a consultation"}
                 />
             </div>
