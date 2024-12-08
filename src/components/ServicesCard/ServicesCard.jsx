@@ -3,7 +3,7 @@ import { Title } from "../../components"
 import { arrowGreen, arrowBlack } from "../../assets"
 
 const ServicesCard = (props) => {
-    const { theme, titleOne, titleTwo, logo, altText } = props
+    const { theme, titleOne, titleTwo, logo, altText, handleToggleModal } = props
 
     const servicesCard = { background: "" }
     
@@ -45,9 +45,9 @@ const ServicesCard = (props) => {
                     />
                 </div>
                 {/* Details link */}
-                <a 
+                <button 
                     className="group/detailsLink flex justify-center items-center gap-[15px]"
-                    href="#"
+                    onClick={handleToggleModal}
                 >
                     {theme === "black" ? 
                     <img src={arrowBlack} alt={"Arrow black icon"} /> : 
@@ -58,7 +58,7 @@ const ServicesCard = (props) => {
                     "text-black group-hover/detailsLink:text-white"}`}>
                         Learn more
                     </span>
-                </a>
+                </button>
             </Content>
             {/* Services card logo */}
             <div>

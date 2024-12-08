@@ -1,12 +1,23 @@
+import { useState } from "react"
 import { Container, Content } from "../../containers"
-import { Heading, Description, ServicesCard, Title, SectionBtn } from "../../components"
+import { Heading, Description, ServicesCard, Title, SectionBtn, Modal } from "../../components"
 import { lmthLogo } from "../../assets"
 import { servicesCardsData } from "../../data"
 
 const Services = () => {
+    const [toggleModal, setToggleModal] = useState(false)
+
+    const handleToggleModal = () => {
+        setToggleModal(prev => !prev)
+    }
+
     return (
         <section id="services">
             <Container styles={`px-6 py-[70px]`}>
+                <Modal 
+                    toggleModal={toggleModal}
+                    handleToggleModal={handleToggleModal}
+                />
                 <Content styles={`flex justify-start 
                 items-center gap-[40px] mb-[80px]`}>
                     <Heading content={"Services"} />
@@ -24,6 +35,7 @@ const Services = () => {
                             titleTwo={servicesCardData.titleTwo}
                             logo={servicesCardData.logo}
                             altText={servicesCardData.altText}
+                            handleToggleModal={handleToggleModal}
                         /> 
                     ))}
                 </div>
