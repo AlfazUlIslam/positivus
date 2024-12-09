@@ -1,9 +1,16 @@
+import { useState } from "react"
 import { Content } from "../../containers"
-import { Title } from "../../components"
+import { Title, Modal } from "../../components"
 import { arrowGreen, arrowBlack } from "../../assets"
 
 const ServicesCard = (props) => {
-    const { theme, titleOne, titleTwo, logo, altText, handleToggleModal } = props
+    const { theme, titleOne, titleTwo, logo, altText } = props
+
+    const [toggleModal, setToggleModal] = useState(false)
+
+    const handleToggleModal = () => {
+        setToggleModal(prev => !prev)
+    }
 
     const servicesCard = { background: "" }
     
@@ -23,10 +30,19 @@ const ServicesCard = (props) => {
         // Services card
         <div 
             className="w-[600px] h-[310px] rounded-[45px] 
-            border border-positivusDark border-b-[7px] p-[50px] flex justify-between 
-            items-center"
+            border border-positivusDark border-b-[7px] p-[50px] 
+            flex justify-between items-center"
             style={servicesCard}
         >
+            <Modal 
+                theme={theme} 
+                titleOne={titleOne} 
+                titleTwo={titleTwo} 
+                logo={logo} 
+                altText={altText}
+                toggleModal={toggleModal}
+                handleToggleModal={handleToggleModal}
+            />
             {/* Services card content */}
             <Content styles={`flex flex-col items-start gap-[90px]`}>
                 {/* Services card title wrapper */}
