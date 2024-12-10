@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Content } from "../../containers"
-import { Title, Modal } from "../../components"
+import { Title, ArrowIcon, Modal } from "../../components"
 import { arrowGreen, arrowBlack } from "../../assets"
 
 const ServicesCard = (props) => {
@@ -28,9 +28,10 @@ const ServicesCard = (props) => {
         
     return (
         // Services card
+        // w-[600px] h-[310px] rounded-[45px] border-b-[7px] p-[50px]
         <div 
-            className="w-[600px] h-[310px] rounded-[45px] 
-            border border-positivusDark border-b-[7px] p-[50px] 
+            className="w-[300px] h-[160px] rounded-[23px] 
+            border border-positivusDark border-b-[5px] p-[25px] 
             flex justify-between items-center"
             style={servicesCard}
         >
@@ -44,7 +45,8 @@ const ServicesCard = (props) => {
                 handleToggleModal={handleToggleModal}
             />
             {/* Services card content */}
-            <Content styles={`flex flex-col items-start gap-[90px]`}>
+            {/* gap-[90px] */}
+            <Content styles={`flex flex-col items-start gap-[20px]`}>
                 {/* Services card title wrapper */}
                 <div className="flex flex-col items-start">
                     <Title 
@@ -61,15 +63,26 @@ const ServicesCard = (props) => {
                     />
                 </div>
                 {/* Details link */}
+                {/* gap-[15px] */}
                 <button 
-                    className="group/detailsLink flex justify-center items-center gap-[15px]"
+                    className="group/detailsLink flex justify-center 
+                    items-center gap-[5px]"
                     onClick={handleToggleModal}
                 >
                     {theme === "black" ? 
-                    <img src={arrowBlack} alt={"Arrow black icon"} /> : 
-                    <img src={arrowGreen} alt={"Arrow green icon"} />}
+                    <ArrowIcon 
+                        image={arrowBlack} 
+                        altText={"Arrow black icon"} 
+                    />
+                    :
+                    <ArrowIcon 
+                        image={arrowGreen} 
+                        altText={"Arrow green icon"} 
+                    />}
+                    {/* Learn more text */}
+                    {/* text-[20px] */}
                     <span className={`font-spaceGrotesk font-normal 
-                    text-[20px] transition-all duration-1000 ${theme === "black" ? 
+                    text-[12px] transition-all duration-1000 ${theme === "black" ? 
                     "text-white group-hover/detailsLink:text-positivusGreen" : 
                     "text-black group-hover/detailsLink:text-white"}`}>
                         Learn more
@@ -79,6 +92,7 @@ const ServicesCard = (props) => {
             {/* Services card logo */}
             <div>
                 <img 
+                    className="w-[100px]"
                     src={logo} 
                     alt={altText} 
                 />
