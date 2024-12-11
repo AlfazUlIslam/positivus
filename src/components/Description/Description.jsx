@@ -3,9 +3,8 @@ const Description = (props) => {
         
     return (
         // Description
-        // text-[18px]
         <p className={`${styles} font-spaceGrotesk 
-        font-normal text-[14px] text-black`}>
+        font-normal text-[14px] text-black xl:text-[18px]`}>
             {content}
         </p>
     )

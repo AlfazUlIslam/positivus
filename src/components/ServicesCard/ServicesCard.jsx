@@ -28,11 +28,12 @@ const ServicesCard = (props) => {
         
     return (
         // Services card
-        // w-[600px] h-[310px] rounded-[45px] border-b-[7px] p-[50px]
         <div 
-            className="w-[300px] h-[160px] rounded-[23px] 
+            className="w-[250px] h-[160px] rounded-[23px] 
             border border-positivusDark border-b-[5px] p-[25px] 
-            flex justify-between items-center"
+            flex justify-between items-center md:w-[350px] 
+            md:h-[200px] lg:w-[450px] lg:h-[250px] xl:w-[600px] 
+            xl:h-[310px] xl:rounded-[45px] xl:border-b-[7px] xl:p-[50px]"
             style={servicesCard}
         >
             <Modal 
@@ -45,8 +46,8 @@ const ServicesCard = (props) => {
                 handleToggleModal={handleToggleModal}
             />
             {/* Services card content */}
-            {/* gap-[90px] */}
-            <Content styles={`flex flex-col items-start gap-[20px]`}>
+            <Content styles={`flex flex-col items-start gap-[20px] 
+            lg:gap-[60px] xl:gap-[90px]`}>
                 {/* Services card title wrapper */}
                 <div className="flex flex-col items-start">
                     <Title 
@@ -63,10 +64,9 @@ const ServicesCard = (props) => {
                     />
                 </div>
                 {/* Details link */}
-                {/* gap-[15px] */}
                 <button 
                     className="group/detailsLink flex justify-center 
-                    items-center gap-[5px]"
+                    items-center gap-[5px] xl:gap-[15px]"
                     onClick={handleToggleModal}
                 >
                     {theme === "black" ? 
@@ -80,11 +80,11 @@ const ServicesCard = (props) => {
                         altText={"Arrow green icon"} 
                     />}
                     {/* Learn more text */}
-                    {/* text-[20px] */}
                     <span className={`font-spaceGrotesk font-normal 
-                    text-[12px] transition-all duration-1000 ${theme === "black" ? 
+                    text-[10px] transition-all duration-1000 ${theme === "black" ? 
                     "text-white group-hover/detailsLink:text-positivusGreen" : 
-                    "text-black group-hover/detailsLink:text-white"}`}>
+                    "text-black group-hover/detailsLink:text-white"} 
+                    md:text-[12px] lg:text-[16px] xl:text-[20px]`}>
                         Learn more
                     </span>
                 </button>
@@ -92,7 +92,8 @@ const ServicesCard = (props) => {
             {/* Services card logo */}
             <div>
                 <img 
-                    className="w-[100px]"
+                    className="w-[100px] md:w-[130px] 
+                    lg:w-[180px] xl:w-auto"
                     src={logo} 
                     alt={altText} 
                 />

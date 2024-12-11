@@ -3,10 +3,10 @@ const Title = (props) => {
 
     return (
         // Title
-        // text-[30px] p-[10px]
         <h4 className={`${styles} rounded-[7px] 
         p-[6px] font-spaceGrotesk font-medium 
-        text-[12px]`}>
+        text-[12px] md:text-[16px] lg:text-[18px] 
+        xl:text-[30px] xl:p-[10px]`}>
             {content}
         </h4>
     )

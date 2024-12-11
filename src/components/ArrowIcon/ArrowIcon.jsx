@@ -3,9 +3,8 @@ const ArrowIcon = (props) => {
         
     return (
         // Arrow icon
-        // w-auto
         <img 
-            className="w-[30px]"
+            className="w-[25px] md:w-[30px] xl:w-auto"
             src={image} 
             alt={altText} 
         />
