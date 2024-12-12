@@ -14,8 +14,10 @@ const Study = (props) => {
                 {description}
             </p>
             {/* Learn more button */}
-            <button className="flex justify-center 
-            items-center gap-[15px]">
+            <button className="border-r-[2px] pr-[10px]
+            border-positivusDark flex justify-center 
+            items-center gap-[15px] transition-all 
+            duration-1000 hover:border-positivusGreen">
                 {/* Learn more button text */}
                 <span className="font-spaceGrotesk 
                 font-normal text-[20px] text-positivusGreen">
