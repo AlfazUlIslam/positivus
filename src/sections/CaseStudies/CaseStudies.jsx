@@ -6,24 +6,23 @@ const CaseStudies = () => {
   return (
     // Case studies
     <section id="case-studies">
-        {/* py-[70px] */}
-        <Container styles={`px-6 py-[40px]`}>
-            {/* flex-col justify-start gap-[40px] */}
+        <Container styles={`px-6 py-[40px] xl:py-[70px]`}>
             <Content styles={`flex flex-col justify-center 
-            items-center gap-[20px]`}>
+            items-center gap-[20px] xl:flex-row xl:justify-start 
+            xl:gap-[40px]`}>
                 <Heading content={"Case Studies"} />
-                {/* w-[580px] text-start */}
                 <Description 
-                    styles={`w-[280px] text-center`}
+                    styles={`w-[280px] text-center sm:w-[500px] 
+                    xl:w-[580px] xl:text-start`}
                     content={"Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"}
                 />
             </Content>
             {/* Studies */}
-            {/* w-[100%] rounded-[5px] py-[90px] mt-[40px] 
-                mx-0 flex-row gap-0 divide-y */}
             <div className="w-[280px] rounded-[45px] 
             py-[40px] mt-[40px] mx-auto bg-positivusDark flex 
-            flex-col justify-center items-center divide-y">
+            flex-col justify-center items-center divide-y 
+            sm:w-[500px] md:w-[100%] md:flex-row md:divide-y-0 
+            md:divide-x xl:py-[90px] xl:mt-[80px]">
                 {studiesData.map((studyData, index) => (
                     <Study 
                         key={studyData.id}
