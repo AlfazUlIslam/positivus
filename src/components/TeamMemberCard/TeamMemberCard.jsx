@@ -5,16 +5,18 @@ const TeamMemberCard = (props) => {
         
     return (
         // Team member card
-        <div className="w-[387px] h-[330px] rounded-[45px] border 
-        border-b-[6px] border-positivusDark p-[40px] flex flex-col 
+        // w-[387px] h-[330px] rounded-[45px] p-[40px]
+        <div className="w-[280px] h-auto rounded-[25px] border 
+        border-b-[6px] border-positivusDark p-[20px] flex flex-col 
         justify-center items-center divide-y-[2px]">
             {/* Team member card header */}
-            <header className="w-full pb-[28px] flex justify-start 
-            items-end gap-[15px]">
+            {/* pb-[28px] gap-[15px] */}
+            <header className="w-full pb-[14px] flex justify-start 
+            items-end gap-[8px]">
                 {/* DP */}
                 <div>
                     <img 
-                        className=""
+                        className="w-[70px]"
                         src={avatar} 
                         alt={altText} 
                     />
@@ -25,7 +27,7 @@ const TeamMemberCard = (props) => {
                     {/* Icon */}
                     <div className="w-full flex justify-end">
                         <img 
-                            className=""
+                            className="w-[25px]"
                             src={linkedinIconBlack} 
                             alt={"LinkedIn Icon"} 
                         />
@@ -34,21 +36,24 @@ const TeamMemberCard = (props) => {
                     <div className="w-full flex flex-col 
                     justify-center items-start gap-[6px]">
                         {/* Name */}
+                        {/* text-[20px] */}
                         <h5 className="font-spaceGrotesk font-medium 
-                        text-[20px] text-black">
+                        text-[16px] text-black">
                             {name}
                         </h5>
                         {/* Position */}
+                        {/* text-[18px] */}
                         <h6 className="font-spaceGrotesk font-normal 
-                        text-[18px] text-black">
+                        text-[14px] text-black">
                             {position}
                         </h6>
                     </div>
                 </div>
             </header>
             {/* About */}
-            <p className="w-[317px] pt-[28px] font-spaceGrotesk font-normal 
-            text-[18px] text-black text-start">
+            {/* w-[317px] pt-[28px] text-[18px] */}
+            <p className="w-[200px] pt-[14px] font-spaceGrotesk 
+            font-normal text-[14px] text-black text-start">
                 {about}
             </p>
         </div>
