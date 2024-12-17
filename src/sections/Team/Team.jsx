@@ -6,8 +6,7 @@ const Team = () => {
     return (
         // Team
         <section id="team">
-            {/* py-[70px] */}
-            <Container styles={`px-6 py-[40px]`}>
+            <Container styles={`px-6 py-[40px] xl:py-[70px]`}>
                 <Content styles={`flex flex-col justify-center 
                 items-center gap-[20px] xl:flex-row xl:justify-start 
                 xl:gap-[40px]`}>
@@ -19,10 +18,10 @@ const Team = () => {
                     />
                 </Content>
                 {/* Team members cards */}
-                {/* mt-[80px] mb-[40px] flex-wrap justify-between 
-                gap-[40px] */}
                 <div className="mt-[40px] mb-[20px] flex flex-col 
-                items-center gap-[20px]">
+                items-center gap-[20px] sm:flex-row sm:flex-wrap 
+                md:justify-center xl:mt-[80px] xl:mb-[40px] 
+                xl:justify-between xl:gap-[40px]">
                     {teamMembersData.map((teamMemberDatum) => (
                         <TeamMemberCard 
                             key={teamMemberDatum.id}
@@ -35,11 +34,9 @@ const Team = () => {
                     ))}
                 </div>
                 {/* See all team button */}
-                {/* text-end */}
-                <div className="w-full text-center">
-                    {/* w-[270px] */}
+                <div className="w-full text-center xl:text-end">
                     <SectionBtn 
-                        styles={`w-[170px]`}
+                        styles={`w-[170px] xl:w-[270px]`}
                         content={"See all team"}
                     />
                 </div>

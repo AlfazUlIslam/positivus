@@ -5,18 +5,20 @@ const TeamMemberCard = (props) => {
         
     return (
         // Team member card
-        // w-[387px] h-[330px] rounded-[45px] p-[40px]
-        <div className="w-[280px] h-auto rounded-[25px] border 
+        <div className="w-[280px] h-[250px] rounded-[25px] border 
         border-b-[6px] border-positivusDark p-[20px] flex flex-col 
-        justify-center items-center divide-y-[2px]">
+        justify-start items-start divide-y-[2px] sm:w-[250px] 
+        sm:h-[260px] md:w-[350px] md:h-[320px] md:rounded-[35px] 
+        md:p-[30px] xl:w-[387px] xl:h-[330px] xl:rounded-[45px] 
+        xl:p-[40px]">
             {/* Team member card header */}
-            {/* pb-[28px] gap-[15px] */}
             <header className="w-full pb-[14px] flex justify-start 
-            items-end gap-[8px]">
+            items-end gap-[8px] md:pb-[28px] md:gap-[15px] xl:pb-[28px] 
+            xl:gap-[15px]">
                 {/* DP */}
                 <div>
                     <img 
-                        className="w-[70px]"
+                        className="w-[70px] md:w-[90px] xl:w-auto"
                         src={avatar} 
                         alt={altText} 
                     />
@@ -27,7 +29,7 @@ const TeamMemberCard = (props) => {
                     {/* Icon */}
                     <div className="w-full flex justify-end">
                         <img 
-                            className="w-[25px]"
+                            className="w-[25px] md:w-[28px] xl:w-auto"
                             src={linkedinIconBlack} 
                             alt={"LinkedIn Icon"} 
                         />
@@ -36,24 +38,23 @@ const TeamMemberCard = (props) => {
                     <div className="w-full flex flex-col 
                     justify-center items-start gap-[6px]">
                         {/* Name */}
-                        {/* text-[20px] */}
                         <h5 className="font-spaceGrotesk font-medium 
-                        text-[16px] text-black">
+                        text-[16px] text-black md:text-[18px] xl:text-[20px]">
                             {name}
                         </h5>
                         {/* Position */}
-                        {/* text-[18px] */}
                         <h6 className="font-spaceGrotesk font-normal 
-                        text-[14px] text-black">
+                        text-[14px] text-black md:text-[16px] xl:text-[18px]">
                             {position}
                         </h6>
                     </div>
                 </div>
             </header>
             {/* About */}
-            {/* w-[317px] pt-[28px] text-[18px] */}
-            <p className="w-[200px] pt-[14px] font-spaceGrotesk 
-            font-normal text-[14px] text-black text-start">
+            <p className="w-[220px] pt-[14px] font-spaceGrotesk 
+            font-normal text-[14px] text-black text-start sm:w-[200px] 
+            md:w-[250px] md:text-[16px] xl:w-[317px] xl:pt-[28px] 
+            xl:text-[18px]">
                 {about}
             </p>
         </div>
