@@ -117,3 +117,42 @@ export const teamMembersData = [
         about: "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries"
     },
 ]
+
+export const accordionData = [
+    {
+        id: uuidv4(),
+        serialNo: "01",
+        title: "Consultation",
+        content: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+    },
+    {
+        id: uuidv4(),
+        serialNo: "02",
+        title: "Research and Strategy Development",
+        content: "Obcaecati quisquam doloremque quia facere maxime nisi alias, dolore magni! Ullam doloremque reiciendis, nihil autem explicabo enim iusto tempora eos."
+    },
+    {
+        id: uuidv4(),
+        serialNo: "03",
+        title: "Implementation",
+        content: "Illum error, magnam nemo cum quia quibusdam voluptatem explicabo delectus. Tenetur, et! Commodi, earum. Dolores ex odit repellat? Minima eius."
+    },
+    {
+        id: uuidv4(),
+        serialNo: "04",
+        title: "Monitoring and Optimization",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quas incidunt saepe quidem ut eligendi laudantium, repellendus provident praesentium rem."
+    },
+    {
+        id: uuidv4(),
+        serialNo: "05",
+        title: "Reporting and Communication",
+        content: "Illum error, magnam nemo cum quia quibusdam voluptatem explicabo delectus. Tenetur, et! Commodi, earum. Dolores ex odit repellat? Minima eius."
+    },
+    {
+        id: uuidv4(),
+        serialNo: "06",
+        title: "Continual Improvement",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quas incidunt saepe quidem ut eligendi laudantium, repellendus provident praesentium rem."
+    },
+]
