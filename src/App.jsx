@@ -1,5 +1,5 @@
 import { NavBar } from "./components"
-import { Hero, Sponsors, Services, CaseStudies, Team } from "./sections"
+import { Hero, Sponsors, Services, CaseStudies, OurWorkingProcess, Team } from "./sections"
 import './App.css'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <Sponsors />
       <Services />
       <CaseStudies />
+      <OurWorkingProcess />
       <Team />
     </div>
   )
