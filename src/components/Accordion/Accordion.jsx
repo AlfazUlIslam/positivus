@@ -29,9 +29,10 @@ const Accordion = () => {
                         px-[20px] py-[20px] transition-all duration-1000`}
                     >
                         {/* Accordion title */}
+                        {/* pb-[30px] */}
                         <header 
-                            className="pb-[30px] flex justify-between items-center 
-                            cursor-pointer"
+                            className="pb-[10px] flex justify-between 
+                            items-center cursor-pointer"
                             onClick={() => {handleSelected(accordionDatum.id)}}    
                         >
                             {/* Serial and title */}
@@ -46,7 +47,7 @@ const Accordion = () => {
                                 {/* Title */}
                                 {/* text-[30px] */}
                                 <h5 className="font-spaceGrotesk 
-                                font-medium text-[12px] text-black">
+                                font-medium text-[14px] text-black">
                                     {accordionDatum.title}
                                 </h5>
                             </div>
@@ -69,7 +70,7 @@ const Accordion = () => {
                         {
                             selected === accordionDatum.id ?
                                 // Accordion description
-                                // text-[18px] pb-[60px]
+                                // text-[18px] pt-[30px] pb-[60px]
                                 <div className="w-full h-[60px] 
                                 border-t-[1px] border-black pt-[30px] 
                                 pb-[80px] font-spaceGrotesk font-normal 
