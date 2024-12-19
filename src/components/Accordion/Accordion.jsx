@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { AccordionIcon } from ".."
 import { accordionData } from "../../data"
 import { plusIcon, minusIcon } from "../../assets"
 import "./Accordion.css"
@@ -12,15 +13,21 @@ const Accordion = () => {
 
     return (
         // Accordion
-        <div className="mt-[80px] space-y-[30px]">
+        // mt-[80px] gap-[30px]
+        <div className="bg-red-200 mt-[40px] flex flex-col items-center 
+        gap-[15px]">
             {
             accordionData && accordionData.length > 0 ? 
                 accordionData.map((accordionDatum) => (
                     // Accordion item
-                    <div className={`${selected === accordionDatum.id ? 
-                    "bg-positivusGreen" : "bg-positivusGrey"} w-[100%] 
-                    rounded-[45px] border border-b-[6px] border-positivusDark 
-                    px-[60px] py-[40px] transition-all duration-1000`}>
+                    // w-[100%] rounded-[45px] px-[60px] py-[40px]
+                    <div 
+                        key={accordionDatum.id}
+                        className={`${selected === accordionDatum.id ? 
+                        "bg-positivusGreen" : "bg-positivusGrey"} w-[300px] 
+                        rounded-[25px] border border-b-[6px] border-positivusDark 
+                        px-[20px] py-[20px] transition-all duration-1000`}
+                    >
                         {/* Accordion title */}
                         <header 
                             className="pb-[30px] flex justify-between items-center 
@@ -28,15 +35,18 @@ const Accordion = () => {
                             onClick={() => {handleSelected(accordionDatum.id)}}    
                         >
                             {/* Serial and title */}
-                            <div className="flex justify-center items-center gap-[25px]">
+                            <div className="flex justify-center 
+                            items-center gap-[25px]">
                                 {/* Serial */}
-                                <h3 className="font-spaceGrotesk font-medium 
-                                text-[60px] text-black">
+                                {/* text-[60px] */}
+                                <h3 className="font-spaceGrotesk 
+                                font-medium text-[25px] text-black">
                                     {accordionDatum.serialNo}
                                 </h3>
                                 {/* Title */}
-                                <h5 className="font-spaceGrotesk font-medium text-[30px] 
-                                text-black">
+                                {/* text-[30px] */}
+                                <h5 className="font-spaceGrotesk 
+                                font-medium text-[12px] text-black">
                                     {accordionDatum.title}
                                 </h5>
                             </div>
@@ -44,18 +54,27 @@ const Accordion = () => {
                             <div className="">
                             {
                                 selected === accordionDatum.id ?
-                                    <img src={minusIcon} alt="Minus Icon" />
+                                    <AccordionIcon 
+                                        image={minusIcon}
+                                        altText={"Minus Icon"}
+                                    />
                                     :
-                                    <img src={plusIcon} alt="Plus Icon" />
+                                    <AccordionIcon 
+                                        image={plusIcon}
+                                        altText={"Plus Icon"}
+                                    />
                             }
                             </div>
                         </header>
-                        {/* Accordion description */}
                         {
                             selected === accordionDatum.id ?
-                                <div className="w-full h-[60px] border-t-[1px] 
-                                border-black pt-[30px] pb-[60px] font-spaceGrotesk font-normal 
-                                text-[18px] text-black transition-all duration-1000">
+                                // Accordion description
+                                // text-[18px] pb-[60px]
+                                <div className="w-full h-[60px] 
+                                border-t-[1px] border-black pt-[30px] 
+                                pb-[80px] font-spaceGrotesk font-normal 
+                                text-[10px] text-black transition-all 
+                                duration-1000">
                                     {accordionDatum.content}
                                 </div>
                                 :

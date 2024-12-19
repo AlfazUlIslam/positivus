@@ -9,7 +9,10 @@ const OurWorkingProcess = () => {
             <Content styles={`flex flex-col justify-center 
             items-center gap-[20px] xl:flex-row xl:justify-start 
             xl:gap-[40px]`}>
-                <Heading content={"Our Working Process"} />
+                <Heading 
+                  styles={`text-center`}
+                  content={"Our Working Process"} 
+                />
                 <Description 
                     styles={`w-[280px] text-center 
                     xl:w-[290px] xl:text-start`}
