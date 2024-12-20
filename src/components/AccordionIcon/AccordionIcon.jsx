@@ -3,9 +3,8 @@ const AccordionIcon = (props) => {
         
     return (
         // Accordion icon
-        // w-auto
         <img 
-            className="w-[25px]" 
+            className="w-[25px] sm:w-[35px] lg:w-[40px] xl:w-auto" 
             src={image} 
             alt={altText} 
         />
