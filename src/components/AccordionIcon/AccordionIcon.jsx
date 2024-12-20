@@ -5,7 +5,7 @@ const AccordionIcon = (props) => {
         // Accordion icon
         // w-auto
         <img 
-            className="w-[30px]" 
+            className="w-[25px]" 
             src={image} 
             alt={altText} 
         />
