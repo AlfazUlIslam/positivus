@@ -41,13 +41,14 @@ const Accordion = () => {
                                 {/* Serial */}
                                 {/* text-[60px] */}
                                 <h3 className="font-spaceGrotesk 
-                                font-medium text-[25px] text-black">
+                                font-medium text-[20px] text-black">
                                     {accordionDatum.serialNo}
                                 </h3>
                                 {/* Title */}
                                 {/* text-[30px] */}
-                                <h5 className="font-spaceGrotesk 
-                                font-medium text-[14px] text-black">
+                                <h5 className="bg-red-100 w-[150px] 
+                                font-spaceGrotesk font-medium text-[12px] 
+                                text-black">
                                     {accordionDatum.title}
                                 </h5>
                             </div>
