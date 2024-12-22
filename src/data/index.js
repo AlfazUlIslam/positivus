@@ -156,3 +156,78 @@ export const accordionData = [
         content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quas incidunt saepe quidem ut eligendi laudantium, repellendus provident praesentium rem."
     },
 ]
+
+export const carouselSlidesData = [
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+    {
+        id: uuidv4(),
+        quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+        quotee: "John Smith",
+        position: "Marketing Director at XYZ Corp"
+    },
+]
