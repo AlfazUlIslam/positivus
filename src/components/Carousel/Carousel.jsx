@@ -1,21 +1,32 @@
 import { useState, useEffect } from 'react'
-import CarouselSlide from './CarouselSlide'
+import { useResponsive } from "../../hooks"
 import { carouselSlidesData } from "../../data"
 import { carouselArrow } from "../../assets"
+import CarouselSlide from './CarouselSlide'
 import "./Carousel.css"
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(1)
     const [length, setLength] = useState(carouselSlidesData.length)
     const [transitionValue, setTransitionValue] = useState('ease-in-out 1s')
+    const [slideDist, setSlideDist] = useState(0)
+
+    const windowSize = useResponsive()
     const carouselSlidesStyles = {
-        transform: `translateX(-${currentIndex * 60}%)`,
+        transform: `translateX(-${currentIndex * slideDist}%)`,
         transition: `${transitionValue}`
     }
 
     useEffect(() => {
         setLength(carouselSlidesData.length)
-    }, [carouselSlidesData])
+        
+        if (windowSize === 320) {
+            setSlideDist(100)
+        }
+        if (windowSize === 576) {
+            setSlideDist(60)
+        }
+    }, [carouselSlidesData, windowSize])
 
     const slideToPrevious = () => {
         if ((currentIndex > 0)) {
@@ -100,8 +111,9 @@ const Carousel = () => {
 
     return (
         <div 
-            className='carousel-container w-[100%] mx-auto mt-[80px] 
-            rounded-[45px] pt-[40px] bg-[#191A23]'
+            className='carousel-container w-[100%] mx-auto mt-[40px] 
+            rounded-[25px] pt-[40px] bg-[#191A23] md:rounded-[35px] 
+            xl:rounded-[45px] xl:mt-[80px]'
         >   
             <div className="carousel-wrapper">
                 <div 
@@ -141,19 +153,25 @@ const Carousel = () => {
                     </div>
                 </div>
                 {/* Carousel nav */}
-                <div className='rounded-[45px] bg-[#191A23] py-[80px] 
-                flex justify-center items-center gap-[200px]'>
+                <div className='rounded-[25px] bg-[#191A23] pt-[20px] 
+                pb-[40px] flex justify-center items-center gap-[200px] 
+                md:rounded-[35px] lg:pt-[40px] xl:rounded-[45px] 
+                xl:pt-[60px] xl:pb-[40px]'>
                     <div 
                         className="rotate-180 cursor-pointer"
                         onClick={slideToPrevious}
                     >
-                        <img src={carouselArrow} />
+                        <img
+                            className="w-[18px] md:w-[24px] xl:w-auto" 
+                            src={carouselArrow} />
                     </div>
                     <div 
-                        className=" cursor-pointer"
+                        className="cursor-pointer"
                         onClick={slideToNext}
                     >
-                        <img src={carouselArrow} />
+                        <img
+                            className="w-[18px] md:w-[24px] xl:w-auto" 
+                            src={carouselArrow} />
                     </div>
                 </div>
             </div>
