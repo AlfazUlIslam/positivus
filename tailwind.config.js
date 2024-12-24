@@ -6,6 +6,7 @@ export default {
       colors: {
         positivusGreen: "#B9FF66",
         positivusGrey: "#F3F3F3",
+        positivusDarkGrey: "#898989",
         positivusDark: "#191A23"
       },
       screens: {
