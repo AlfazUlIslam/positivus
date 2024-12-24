@@ -5,11 +5,11 @@ const TeamMemberCard = (props) => {
         
     return (
         // Team member card
-        <div className="w-[280px] h-[250px] rounded-[25px] border 
+        <div className="w-[280px] h-[260px] rounded-[25px] border 
         border-b-[6px] border-positivusDark p-[20px] flex flex-col 
         justify-start items-start divide-y-[2px] sm:w-[250px] 
-        sm:h-[260px] md:w-[350px] md:h-[320px] md:rounded-[35px] 
-        md:p-[30px] xl:w-[387px] xl:h-[330px] xl:rounded-[45px] 
+        sm:h-[280px] md:w-[350px] md:h-[320px] md:rounded-[35px] 
+        md:p-[30px] xl:w-[387px] xl:h-[380px] xl:rounded-[45px] 
         xl:p-[40px]">
             {/* Team member card header */}
             <header className="w-full pb-[14px] flex justify-start 
@@ -44,7 +44,7 @@ const TeamMemberCard = (props) => {
                         </h5>
                         {/* Position */}
                         <h6 className="font-spaceGrotesk font-normal 
-                        text-[14px] text-black md:text-[16px] xl:text-[18px]">
+                        text-[14px] text-black sm:text-[12px] md:text-[16px] xl:text-[18px]">
                             {position}
                         </h6>
                     </div>
