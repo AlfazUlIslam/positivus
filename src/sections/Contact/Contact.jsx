@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Container, Content, ColumnOne, ColumnTwo, Groups } from "../../containers"
-import { Heading, Description, InputGroup, SectionBtn } from "../../components"
+import { Heading, Description, RadioGroup, InputGroup, SectionBtn } from "../../components"
 import { contactUsLogo } from "../../assets"
 import "./Contact.css"
 
@@ -39,33 +39,29 @@ const Contact = () => {
                     />
                 </Content>
                 {/* Form and image container */}
-                <div className="relative w-[100%] rounded-[45px] bg-positivusGrey 
-                pl-[100px] py-[60px] mt-[80px] flex justify-between items-center">
+                {/* rounded-[45px] pl-[100px] mt-[80px] justify-start */}
+                <div className="relative w-[100%] rounded-[25px] bg-positivusGrey 
+                pl-[0px] py-[60px] mt-[40px] flex justify-center items-center">
                     <ColumnOne>
                         <form onSubmit={handleSubmit}>
                             {/* Radio groups */}
+                            {/* gap-[35px] */}
                             <Groups classes={`flex justify-start items-center 
-                            gap-[35px]`}>
+                            gap-[25px]`}>
                                 {/* Say hi radio group */}
-                                <label className="form-group">Say Hi
-                                    <input 
-                                        type="radio" 
-                                        name="contact" 
-                                        value={"say hi"}
-                                        onChange={handleChange}
-                                    />
-                                    <span className="form-group__checkmark"></span>
-                                </label>
+                                <RadioGroup 
+                                    labelText={"Say Hi"}
+                                    name="contact" 
+                                    value={"say hi"}
+                                    handleChange={handleChange}
+                                />
                                 {/* Get a quote radio group */}
-                                <label className="form-group">Get a Quote
-                                    <input 
-                                        type="radio" 
-                                        name="contact" 
-                                        value={"get a quote"}
-                                        onChange={handleChange}
-                                    />
-                                    <span className="form-group__checkmark"></span>
-                                </label>
+                                <RadioGroup 
+                                    labelText={"Get a Quote"}
+                                    name="contact" 
+                                    value={"get a quote"}
+                                    handleChange={handleChange}
+                                />
                             </Groups>
                             {/* Input groups */}
                             <Groups classes={`my-[40px] flex flex-col 
@@ -105,7 +101,7 @@ const Contact = () => {
                                 />
                             </Groups>
                             {/* Send message button container */}
-                            <div className="">
+                            <div className="text-center">
                                 <SectionBtn 
                                     styles={`w-[170px] xl:w-[556px]`}
                                     type={"submit"}
@@ -114,8 +110,8 @@ const Contact = () => {
                             </div>
                         </form>
                     </ColumnOne>
-                    <ColumnTwo styles={`absolute right-[-49%] 
-                    translate-x-[-49%]`}>
+                    {/* absolute right-[-49%] translate-x-[-49%] */}
+                    <ColumnTwo styles={`hidden`}>
                         {/* translate-x-[46%] */}
                         <img 
                             className=""
