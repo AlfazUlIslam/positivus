@@ -39,15 +39,18 @@ const Contact = () => {
                     />
                 </Content>
                 {/* Form and image container */}
-                {/* rounded-[45px] pl-[100px] mt-[80px] justify-start */}
                 <div className="relative w-[100%] rounded-[25px] bg-positivusGrey 
-                pl-[0px] py-[60px] mt-[40px] flex justify-center items-center">
+                pl-[0px] py-[60px] mt-[40px] flex justify-center items-center 
+                md:pl-[40px] md:justify-between xl:rounded-[45px] xl:pl-[100px] 
+                xl:mt-[80px]">
                     <ColumnOne>
-                        <form onSubmit={handleSubmit}>
+                        <form 
+                            className="flex flex-col items-start md:items-start"
+                            onSubmit={handleSubmit}
+                        >
                             {/* Radio groups */}
-                            {/* gap-[35px] */}
                             <Groups classes={`flex justify-start items-center 
-                            gap-[25px]`}>
+                            gap-[25px] xl:gap-[35px]`}>
                                 {/* Say hi radio group */}
                                 <RadioGroup 
                                     labelText={"Say Hi"}
@@ -103,18 +106,17 @@ const Contact = () => {
                             {/* Send message button container */}
                             <div className="text-center">
                                 <SectionBtn 
-                                    styles={`w-[170px] xl:w-[556px]`}
+                                    styles={`w-[220px] sm:w-[400px] 
+                                    md:w-[220px] xl:w-[556px]`}
                                     type={"submit"}
                                     content={"Send Message"}
                                 />
                             </div>
                         </form>
                     </ColumnOne>
-                    {/* absolute right-[-49%] translate-x-[-49%] */}
-                    <ColumnTwo styles={`hidden`}>
-                        {/* translate-x-[46%] */}
+                    <ColumnTwo styles={`hidden md:block`}>
                         <img 
-                            className=""
+                            className="w-[300px] lg:w-[350px] xl:w-auto"
                             src={contactUsLogo} 
                             alt="Contact us logo" 
                         />

@@ -7,9 +7,9 @@ const RadioGroup = (props) => {
         // Radio group
         <label className="form-group">
             {/* Label text */}
-            {/* text-[18px] */}
             <span className="font-spaceGrotesk font-normal text-[12px] 
-            text-positivusDark">
+            text-positivusDark sm:text-[14px] md:text-[12px] lg:text-[14px] 
+            xl:text-[18px]">
                 {labelText}
             </span>
             <input 
