@@ -5,8 +5,9 @@ const FooterLink = (props) => {
         
     return (
         // Footer link
+        // text-[18px]
         <a 
-            className="font-spaceGrotesk font-normal text-[18px] text-white 
+            className="font-spaceGrotesk font-normal text-[14px] text-white 
             transition-all duration-1000 hover:underline hover:underline-offset-4"
             href={linkRef}>
             {/* <FooterText content={content} /> */}

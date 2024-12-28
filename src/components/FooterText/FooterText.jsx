@@ -3,7 +3,8 @@ const FooterText = (props) => {
         
     return (
         // Footer text
-        <p className="font-spaceGrotesk font-normal text-[18px] text-white">
+        // text-[18px]
+        <p className="font-spaceGrotesk font-normal text-[14px] text-white">
             {content}
         </p>
     )
