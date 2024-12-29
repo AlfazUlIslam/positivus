@@ -3,9 +3,9 @@ const FooterLogo = (props) => {
         
     return (
         // Footer logo
-        // w-auto
         <img 
-            className="w-[25px]"
+            className="w-[25px] sm:w-auto md:w-[20px] 
+            lg:w-[25px] xl:w-auto"
             src={image} 
             alt={altText} 
         />
