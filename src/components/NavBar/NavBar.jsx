@@ -48,9 +48,9 @@ const NavBar = () => {
                     </button>
                     {/* Mobile menu */}
                     <ul className={`${toggle ? "flex" : "hidden"} rounded-md 
-                    flex-col items-center gap-2 absolute top-14 right-[0.2rem] 
-                    p-4 bg-white border border-slate-100 shadow-xl slide_up 
-                    sm:gap-4 sm:p-6`}> 
+                    flex-col items-center gap-2 absolute top-[60px] right-0 
+                    p-4 bg-white border border-slate-200 shadow-xl sm:gap-4 
+                    sm:p-6`}> 
                         <NavLink linkRef={"#home"} content={"Home"} />
                         <NavLink linkRef={"#services"} content={"Services"} />
                         <NavLink linkRef={"#case-studies"} content={"Case Studies"} />

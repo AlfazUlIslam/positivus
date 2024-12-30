@@ -1,29 +1,3 @@
-@keyframes slide-up-animation {
-    0% {
-        transform: translateY(100px);
-        -webkit-transform: translateY(100px);
-    }
-    100% {
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-    }
-}
-
-@-webkit-keyframes slide-up-animation {
-    0% {
-        transform: translateY(100px);
-        -webkit-transform: translateY(100px);
-    }
-    100% {
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-    }
-}
-
-.slide_up {
-    animation: slide-up-animation 0.8s;
-}
-
 :root {
     --my-dim: 2px
 }
