@@ -1,5 +1,11 @@
 :root {
-    --my-dim: 2px
+    --my-dim: 2px;
+}
+
+@media (min-width: 576px) {
+    :root {
+        --my-dim: 3px;
+    }
 }
 
 .mob_menu_btn {
@@ -31,8 +37,10 @@
     transform: translateY(calc(var(--my-dim) * -1)) rotate(-45deg);
 }
 
-@media (min-width: 576px) {
-    :root {
-        --my-dim: 3px;
-    }
+nav {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
