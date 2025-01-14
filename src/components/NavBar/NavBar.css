@@ -1,3 +1,17 @@
+@keyframes slide-up-animation {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.slide-up {
+    animation: slide-up-animation 0.8s;
+    animation-fill-mode: forwards;
+}
+
 :root {
     --my-dim: 2px;
 }
