@@ -47,17 +47,12 @@ const NavBar = () => {
                         <div className="line-three"></div>
                     </button>
                     {/* Mobile menu */}
-                    {/* top-[250px] right-[-150px] */}
                     <ul 
                         className={`${toggle ? "flex" : "hidden"} rounded-md 
                         flex-col items-center gap-2 absolute top-[200px] right-[-100px] 
                         p-4 bg-white border border-slate-200 shadow-xl sm:gap-4 
-                        sm:p-6 sm:top-[250px] sm:right-[-120px] slide-up`}
-                        // style={{ 
-                            
-                        //     animation: "slide-up-animation 0.4s",
-                        //     animationFillMode: "forwards"
-                        // }}
+                        sm:p-6 sm:top-[250px] sm:right-[-120px] md:gap-2 md:p-4 
+                        md:top-[200px] md:right-[-100px] slide-up`}
                     >
                         <NavLink linkRef={"#home"} content={"Home"} />
                         <NavLink linkRef={"#services"} content={"Services"} />

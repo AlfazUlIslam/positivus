@@ -6,7 +6,8 @@ const NavBtn = () => {
     font-normal text-[14px] text-black 
     cursor-pointer transition-all duration-1000 
     hover:bg-positivusDark hover:text-white 
-    active:scale-90 sm:w-[180px] sm:text-[16px] 
+    active:scale-90 sm:w-[180px] sm:text-[16px] md:w-[150px] 
+    md:text-[14px] 
     lg:text-[14px] xl:w-[230px] xl:h-[70px] xl:text-[20px]">
         Request a quote
     </button>
