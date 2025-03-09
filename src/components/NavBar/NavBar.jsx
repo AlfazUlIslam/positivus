@@ -32,7 +32,7 @@ const NavBar = () => {
                     <NavLink linkRef={"#services"} content={"Services"} />
                     <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
                     <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
-                    <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
+                    <NavLink linkRef={"#contact"} content={"Contact Us"} />
                     <NavBtn />
                 </ul>
                 {/* Mobile menu container */}
@@ -58,7 +58,7 @@ const NavBar = () => {
                         <NavLink linkRef={"#services"} content={"Services"} />
                         <NavLink linkRef={"#case-studies"} content={"Case Studies"} />
                         <NavLink linkRef={"#testimonials"} content={"Testimonials"} />
-                        <NavLink linkRef={"#contact-us"} content={"Contact Us"} />
+                        <NavLink linkRef={"#contact"} content={"Contact Us"} />
                         <NavBtn />
                     </ul>
                 </div>
