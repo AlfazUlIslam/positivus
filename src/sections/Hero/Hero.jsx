@@ -1,6 +1,5 @@
 import { Container } from "../../containers"
 import { SectionBtn } from "../../components"
-import { heroImg } from "../../assets"
 
 const Hero = () => {
   return (
@@ -37,7 +36,7 @@ const Hero = () => {
                 <img 
                     className="w-[300px] sm:w-[500px] 
                     md:w-[300px] lg:w-[450px] xl:w-auto"
-                    src="hero-img.png"
+                    src="images/hero-img.png"
                     alt="Hero Image" 
                 />
             </div>

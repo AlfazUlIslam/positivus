@@ -10,12 +10,12 @@ const Sponsors = () => {
         items-center gap-6 sm:flex-row sm:flex-wrap 
         sm:justify-center lg:justify-between lg:gap-0 
         xl:py-[70px] xl:flex-nowrap`}>
-            <SponsorImage image={amazonLogo} altText={"Amazon Logo"} />
-            <SponsorImage image={dribbleLogo} altText={"Dribble Logo"} />
-            <SponsorImage image={hubspotLogo} altText={"Hubspot Logo"} />
-            <SponsorImage image={notionLogo} altText={"Notion Logo"} />
-            <SponsorImage image={netflixLogo} altText={"Netflix Logo"} />
-            <SponsorImage image={zoomLogo} altText={"Zoom Logo"} />
+            <SponsorImage imagePath={"images/amazon-logo.png"} altText={"Amazon Logo"} />
+            <SponsorImage imagePath={"images/dribble-logo.png"} altText={"Dribble Logo"} />
+            <SponsorImage imagePath={"images/hubspot-logo.png"} altText={"Hubspot Logo"} />
+            <SponsorImage imagePath={"images/notion-logo.png"} altText={"Notion Logo"} />
+            <SponsorImage imagePath={"images/netflix-logo.png"} altText={"Netflix Logo"} />
+            <SponsorImage imagePath={"images/zoom-logo.png"} altText={"Zoom Logo"} />
         </Container>
     </section>
   )

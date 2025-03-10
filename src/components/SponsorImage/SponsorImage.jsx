@@ -1,11 +1,11 @@
 const SponsorImage = (props) => {
-    const { image, altText } = props
+    const { imagePath, altText } = props
         
     return (
         <img 
             className="sm:w-[150px] md:w-[100px] 
             lg:w-[130px] xl:w-auto"
-            src={image} 
+            src={imagePath} 
             alt={altText} 
         />
     )
