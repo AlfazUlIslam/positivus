@@ -9,7 +9,7 @@ const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(1)
     const [length, setLength] = useState(carouselSlidesData.length)
     const [transitionValue, setTransitionValue] = useState('ease-in-out 1s')
-    const [slideDist, setSlideDist] = useState(100)
+    const [slideDist, setSlideDist] = useState(0)
 
     const windowSize = useResponsive()
     const carouselSlidesStyles = {
@@ -19,6 +19,10 @@ const Carousel = () => {
 
     useEffect(() => {
         setLength(carouselSlidesData.length)
+
+        if (windowSize > 319 && windowSize < 576) {
+            setSlideDist(100)
+        }
         
         if (windowSize > 575) {
             setSlideDist(60)
