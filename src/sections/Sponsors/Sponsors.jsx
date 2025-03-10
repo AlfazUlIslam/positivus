@@ -1,6 +1,5 @@
 import { Container } from "../../containers"
 import { SponsorImage } from "../../components"
-import { amazonLogo, dribbleLogo, hubspotLogo, notionLogo, netflixLogo, zoomLogo } from "../../assets"
 
 const Sponsors = () => {
   return (
